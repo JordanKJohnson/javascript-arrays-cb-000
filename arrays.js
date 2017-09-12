@@ -8,8 +8,9 @@ function destructivelyAddElementToBeginningOfArray(array, element){
   return array.unshift(element);
 }
 
-function addElementToEndOfArray(array, element){
-  return array.push(element);
+function addElementToEndOfArray(a, element){
+  array = [...a, element];
+  return array;
 }
 
 function accessElementInArray(array, index){
